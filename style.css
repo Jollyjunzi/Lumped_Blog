@@ -1,0 +1,260 @@
+#typography {
+    text-align: center;
+    font-size: 24px;
+    color: #fffff8;
+    width: 70%;
+    margin: auto;
+    line-break: 1.3em;
+    font-family: 'Merriweather', serif;
+}
+body {
+    background-color: #DADAE4;
+}
+.center {
+    color:rgb(11, 63, 63);
+    ;
+}
+.small {
+    font-size: 10px;
+}
+/* Small Screen */
+
+@media(max-width:900px) {
+    #nestGrid {
+        display:none;
+    }
+    .header {
+        display:none;
+    }
+    #typography{
+        font-size: 12px;
+    }
+    .navLink {
+        display:none;
+}
+.container {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-rows: 70px 500px auto auto;
+    grid-template-columns: 120%;
+    grid-template-areas: 
+    "sm"
+    "title"
+    "hd"
+    "subheader"
+    "point"
+    "ftlow";
+}
+}
+@media(min-width:900px){
+.container {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-rows: 70px 500px auto auto;
+    grid-template-columns: 120%;
+    grid-template-areas: 
+    "hd"
+    "title"
+    "subheader"
+    "point"
+    "ftlow"
+    "sm";
+    justify-content: center;
+    border: none;
+}
+.menu {
+    display: none;
+    background-image: none;
+}
+.dropdown_button {
+    display:none;
+}
+}
+.box{
+    display:inline-flex;
+    justify-items: center;
+    justify-content:center;
+    border: 2px solid #fffff8;
+    background:none;
+    padding: 10px;
+    margin:0px;
+}
+.boxcontent {
+    display:flex;
+    padding:10px;
+    border: none;
+    background:none;
+    align-items: baseline;
+    justify-content:baseline;
+}
+.header {
+    grid-area: hd;
+    background-image:url("images/snow.jpeg");
+}
+.title {
+    grid-area: title;
+    background-image:url("images/snow.jpeg");
+    background-size:cover;
+}
+.sub {
+    grid-area: subheader;
+    margin:10px;
+}
+.main {
+    grid-area: point;
+    margin: 10px;
+    display:inline;
+}
+.ft {
+    grid-area: ftlow;
+    margin:10px;
+}
+#noborder {
+    border: none;
+}
+/* Header Grid */
+#nestGrid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 100%;
+}
+#one {
+    text-align:center;
+    padding:10px;
+}
+#two {
+    text-align:center;
+    padding:10px;
+}
+#three {
+    text-align:center;
+    padding:10px;
+}
+#four {
+    text-align:center;
+    padding:10px;
+}
+
+
+
+/* Recent Posts Grid */
+
+#nestGridB{
+    display: grid;
+    grid-template-rows: 30px 30px 30px;
+}
+.navLink {
+    width: 100px;
+    height: 100%;
+}
+.form {
+    width:250px;
+    height: 100px;
+}
+
+.btnz {
+    display: block;
+    float: left;
+    padding: 10px 15px;
+    border:none;
+    background-color: #ececec;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFF;
+}
+.btnz:hover {
+    color: #efefef;
+}
+.facebook {
+    background-color: #3b5998;
+}
+.twitter {
+    background-color: #55acee;
+}
+.linkedin {
+    background-color: #0077b5;
+}
+
+/* Dropdown Menu */
+
+.dropdown_button {
+	background-color: rgb(11, 63, 63);
+	color: white;
+	padding: 10px;
+	font-size: 15px;
+	border: 1px solid #fffff8;
+}
+
+.menu {
+    display: inline-block;
+    position: relative;
+    grid-area:sm;
+    align-content: left;
+}
+
+.option {
+	display: none;
+	background-color: lightgray;
+	min-width: 150px;
+	z-index: 1;
+	position: absolute;
+}
+
+.option a {
+	text-decoration: none;
+	display: block;
+	color: black;
+	padding: 16px;
+}
+
+.option a:hover {
+	background-color: #f7f7f7;
+}
+
+.menu:hover .option {
+	display: block;
+}
+.menuBox{
+    display:inline-flex;
+    justify-items: left;
+    justify-content:left;
+    padding: 10px;
+    margin:0px;
+}
+/*Thumbnail*/
+.thumb {
+    border: 2px solid #C0C0C0;
+    padding: 5px;
+}
+.thumb:hover {
+    box-shadow: 0px 4px 5px #FFD700;
+}
+#nestThumb{
+    display: grid;
+    grid-template-columns: 35vw 30vw;
+    grid-template-rows: 15vw;
+    grid-gap:40px;
+    justify-content: right;
+}
+.thumbBox{
+    width: 15vw;
+    height:12vw; 
+}
+#yi{
+    background-image:url("images/start.jpg");
+    background-size:cover;
+}
+#er{
+    background-image:url("images/street.jpg");
+    background-size:cover;
+}
+#san{
+    background-image:url("images/you.jpg");
+    background-size:cover;
+}
+#si{
+    background-image:url("images/sign.jpg");
+    background-size:cover;
+}
