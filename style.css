@@ -15,7 +15,8 @@ body {
     ;
 }
 .small {
-    font-size: 10px;
+    font-size: 12px;
+    color:rgb(11, 63, 63);
 }
 /* Small Screen */
 
@@ -138,7 +139,6 @@ body {
 }
 
 
-
 /* Recent Posts Grid */
 
 #nestGridB{
@@ -229,7 +229,7 @@ body {
     padding: 5px;
 }
 .thumb:hover {
-    box-shadow: 0px 4px 5px #FFD700;
+    box-shadow: 0px 4px 5px rgb(11, 63, 63)
 }
 #nestThumb{
     display: grid;
@@ -239,7 +239,7 @@ body {
     justify-content: right;
 }
 .thumbBox{
-    width: 15vw;
+    width: 20vw;
     height:12vw; 
 }
 #yi{

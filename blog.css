@@ -8,6 +8,10 @@
     font-family: 'Merriweather', serif;
     display:inline-block;
 }
+.intro {
+    font-size: 10px;
+    font-style: italic;
+}
 .bold {
     color:darkolivegreen;
     font-weight: bold;
