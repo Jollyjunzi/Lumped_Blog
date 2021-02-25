@@ -8,11 +8,6 @@
     font-family: 'Merriweather', serif;
     display:inline-block;
 }
-/* Links */
-a {
-    color:#fffff8;
-}
-
 .intro {
     font-size: 10px;
     font-style: italic;
@@ -72,7 +67,7 @@ body {
     display: grid;
     width: 100%;
     margin:auto;
-    grid-template-rows: 70px 200px auto 100px;
+    grid-template-rows: 70px 250px auto 100px;
     grid-template-columns: 300px 300px 300px;
     grid-template-areas:
     "hd hd hd hd hd hd"
@@ -95,7 +90,7 @@ body {
     display: grid;
     width: 100%;
     margin:auto;
-    grid-template-rows: 70px 200px auto 100px;
+    grid-template-rows: 70px 300px auto 100px;
     grid-template-columns: 300px 300px 300px 300px;
     grid-template-areas:
     "hd hd hd hd hd hd"
@@ -170,12 +165,11 @@ body {
 .navLink {
     width: 100px;
     height: 100%;
-    color: #fffff8;
+    color:  #DADAE4;
 }
 #one {
     text-align:center;
     padding:10px;
-    color:#fffff8;
 }
 #two {
     text-align:center;
@@ -214,9 +208,8 @@ body {
     border: 2px solid black;
 }
 #nestGridC {
-    display:grid;
-    grid-template-rows: 30px 30px;
-    grid-gap:20px;
+    display:flex;
+    flex-direction: column;
 }
 .head {
     width: 100%;
@@ -284,3 +277,4 @@ body {
 .menu:hover .option {
 	display: block;
 }
+

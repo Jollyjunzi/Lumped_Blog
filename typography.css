@@ -1,0 +1,19 @@
+/* Main Font */
+#typography {
+    text-align: center;
+    font-size: 24px;
+    color: #fffff8;
+    width: 70%;
+    margin: auto;
+    line-break: 1.3em;
+    font-family: 'Merriweather', serif;
+}
+@media(max-width:900px) {
+    #typography{
+        font-size: 12px;
+    }
+}
+/* Links */
+a {
+    color:#fffff8;
+}
