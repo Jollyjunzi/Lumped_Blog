@@ -8,6 +8,11 @@
     font-family: 'Merriweather', serif;
     display:inline-block;
 }
+/* Links */
+a {
+    color:#fffff8;
+}
+
 .intro {
     font-size: 10px;
     font-style: italic;
